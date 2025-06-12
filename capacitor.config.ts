@@ -1,9 +1,9 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'com.micv.app',
   appName: 'mi-cv-app',
-  webDir: 'www'
+  webDir: 'www',
 };
 
 export default config;

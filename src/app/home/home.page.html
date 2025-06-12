@@ -1,20 +1,141 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content id="cv-content">
+  <div class="cv-header">
+    <div class="cv-top-bar">
+      <div class="cv-name-title">
+        <h1 class="cv-name">Roberto Carlos Pineda Tabarez</h1>
+        <h2>Desarrollador Front End Angular</h2>
+      </div>
+      <div class="cv-logo">
+        <img src="assets/indra.svg" alt="Minsait Indra logo" />
+      </div>
+    </div>
+    <div class="cv-divider"></div>
   </div>
+
+  <div class="cv-summary">
+    <p>
+      Ingeniero en Sistemas Computacionales con sólida experiencia en desarrollo
+      Front-End usando Angular. Especialista en interfaces de alta calidad,
+      prototipos y maquetación web con Figma, Adobe XD y Photoshop. Experto en
+      diseño responsivo, integración de servicios web y consumo de APIs. He
+      implementado Google Analytics y Google Optimize en diversos proyectos para
+      mejorar el rendimiento de aplicaciones.
+    </p>
+    <p>
+      <strong>Perfil profesional de interés:</strong> Interesado en desempeñarme
+      como Front End Specialist en proyectos de Banca, con enfoque en la mejora
+      continua del diseño visual y la experiencia de usuario. Busco certificarme
+      para fortalecer mi formación profesional.
+    </p>
+  </div>
+
+  <!-- Foto + nombre -->
+  <div class="profile-header">
+    <img src="assets/roberto.jpg" alt="Foto de perfil" />
+    <h1>Roberto Carlos Pineda Tabarez</h1>
+    <h2>Front-End Developer / Angular Specialist</h2>
+  </div>
+
+  <!-- Perfil profesional -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Perfil Profesional</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Ingeniero en Sistemas con más de 5 años de experiencia desarrollando
+        interfaces web con Angular, integración de APIs, Google Analytics,
+        diseño responsivo y maquetación en Figma, XD y Photoshop.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Experiencia -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Experiencia Profesional</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ul>
+        <li>
+          <a [routerLink]="['/experiencia', 'santander-loyalty']"
+            ><strong>Santander - Proyecto Loyalty (2024-2025)</strong></a
+          >
+        </li>
+        <li>
+          <a [routerLink]="['/experiencia', 'cibanco']"
+            ><strong>CI-Banco - Gestor Documental (2023-2024)</strong></a
+          >
+        </li>
+        <li>
+          <a [routerLink]="['/experiencia', 'axa']"
+            ><strong>AXA - Reportes Adhoc (2023)</strong></a
+          >
+        </li>
+        <li>
+          <a [routerLink]="['/experiencia', 'sgf']"
+            ><strong>Santander Global Facilities (2021-2022)</strong></a
+          >
+        </li>
+        <li>
+          <a [routerLink]="['/experiencia', 'gft']"
+            ><strong>GFT México (2020-2021)</strong></a
+          >
+        </li>
+        <li>
+          <a [routerLink]="['/experiencia', 'praxis']"
+            ><strong>PRAXIS México (2016-2019)</strong></a
+          >
+        </li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Tecnologías -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Conocimientos Técnicos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        <strong>Lenguajes:</strong> TypeScript, HTML5, CSS3, JavaScript, SASS
+      </p>
+      <p><strong>Frameworks:</strong> Angular (v7 a v18), RxJS, Bootstrap</p>
+      <p><strong>Herramientas:</strong> Git, Jenkins, Figma, Adobe XD</p>
+      <p><strong>Bases de datos:</strong> MySQL, MongoDB, SQL Server</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Educación -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Educación</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Ingeniería en Sistemas Computacionales, ITSH (2011 - 2016)</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Idiomas -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Idiomas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Español (Nativo), Inglés (B1)</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- QR -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Compartir</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="ion-text-center">
+      <!-- <qrcode [qrdata]="'https://mi-cv-app.com/roberto-carlos'" [width]="150"></qrcode> -->
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Botón PDF -->
+  <ion-button expand="block" (click)="downloadPDF()">Exportar a PDF</ion-button>
 </ion-content>
