@@ -35,6 +35,12 @@ ion-card-title {
 }
 
 .cv-header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+
   .cv-top-bar {
     background-color: #1d3c4e;
     color: white;
@@ -80,4 +86,10 @@ ion-card-title {
   padding: 2rem;
   font-size: 0.95rem;
   line-height: 1.6;
+  margin-top: 170px; // Ajusta según el alto del cv-top-bar
+  text-align: justify;
+}
+
+p {
+  text-align: justify;
 }
