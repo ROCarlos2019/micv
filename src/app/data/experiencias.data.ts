@@ -20,6 +20,7 @@ export const EXPERIENCIAS: any = {
     tecnologiasFinales:
       'Angular v18.2.1, HTML5, CSS3, TypeScript, RxJS, Figma.',
     icono: 'business-outline',
+    logo: 'assets/empresas/santander.png',
   },
   cibanco: {
     titulo: 'CI-Banco / Gestor Documental',
@@ -41,6 +42,7 @@ export const EXPERIENCIAS: any = {
     tecnologiasFinales:
       'Angular v17.3.4, Bootstrap 5.2.3, HTML5, CSS3, TypeScript, RxJS, Angular Material, Zeplin, Figma, Swagger, Moment, @ngrx, crypto-js.',
     icono: 'document-text-outline',
+    logo: 'assets/empresas/CIBanco.png',
   },
   axa: {
     titulo: 'AXA / Reportes Adhoc',
@@ -57,6 +59,7 @@ export const EXPERIENCIAS: any = {
     tecnologiasFinales:
       'AngularJS, Angular v15.2.8, Bootstrap 5.2.3, HTML5, CSS3, TypeScript, RxJS, Swagger, NodeJS, MongoDB',
     icono: 'business-outline',
+    logo: 'assets/empresas/AXA.png',
   },
   sgf: {
     titulo: 'Santander Global Facilities / ClictwoSell',
@@ -76,6 +79,7 @@ export const EXPERIENCIAS: any = {
     tecnologiasFinales:
       'Angular 7, 9, 11, Bootstrap, HTML5, CSS3, TypeScript, Swagger, Google Analytics, Google Optimize, Figma, Miro.',
     icono: 'phone-portrait-outline',
+    logo: 'assets/empresas/santander.png',
   },
   gft: {
     titulo: 'GFT México / Santander Móvil – OnePay',
@@ -94,6 +98,7 @@ export const EXPERIENCIAS: any = {
     tecnologiasFinales:
       'Angular 7, TypeScript, JavaScript, HTML5, CSS3, RxJS, Jasmine, Karma, Google Analytics, Tealium.',
     icono: 'cash-outline',
+    logo: 'assets/empresas/GFT.png',
   },
   praxis: {
     titulo: 'PRAXIS México / Proyectos Destacados',
@@ -110,5 +115,6 @@ export const EXPERIENCIAS: any = {
     tecnologiasFinales:
       'Angular 6–8, Bootstrap 3.3.7–4.3.1, HTML5, CSS3, SASS, TypeScript, JSP, NodeJS, MongoDB, VTL, iReport, Pentaho, JasperServer, MicroStrategy, jQuery, AdobeXD, Marvel App, Photoshop, Illustrator.',
     icono: 'apps-outline',
+    logo: 'assets/empresas/praxis.png',
   },
 };
