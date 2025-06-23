@@ -141,9 +141,9 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
   type: _HomePage,
   selectors: [["app-home"]],
   standalone: false,
-  decls: 105,
+  decls: 111,
   vars: 12,
-  consts: [["id", "cv-content"], [1, "cv-header"], [1, "cv-top-bar"], [1, "cv-name-title"], [1, "cv-name"], [1, "cv-logo"], ["src", "assets/indra.svg", "alt", "Minsait Indra logo"], [1, "cv-divider"], [1, "cv-summary"], [1, "profile-header"], ["src", "assets/roberto.jpg", "alt", "Foto de perfil"], [3, "routerLink"], [1, "ion-text-center"], ["expand", "block", 3, "click"]],
+  consts: [["id", "cv-content"], [1, "cv-header"], [1, "cv-top-bar"], [1, "cv-name-title"], [1, "cv-name"], [1, "cv-logo"], ["src", "assets/indra.svg", "alt", "Minsait Indra logo"], [1, "cv-divider"], [1, "cv-summary"], [1, "profile-header"], ["src", "assets/roberto.jpg", "alt", "Foto de perfil"], [3, "routerLink"], ["expand", "block", 3, "click"]],
   template: function HomePage_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](0, "ion-content", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1", 4);
@@ -231,23 +231,30 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](88, "ion-card-content")(89, "p");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](90, "Ingenier\u00EDa en Sistemas Computacionales, ITSH (2011 - 2016)");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](91, "ion-card")(92, "ion-card-header")(93, "ion-card-title");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](94, "Idiomas");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](95, "ion-card-content")(96, "p");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](97, "Espa\u00F1ol (Nativo), Ingl\u00E9s (B1)");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](98, "ion-card")(99, "ion-card-header")(100, "ion-card-title");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](101, "Compartir");
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelement"](102, "ion-card-content", 12);
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](103, "ion-button", 13);
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HomePage_Template_ion_button_click_103_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](91, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](92, "Instituto T\u00E9cnologico Superior de Huetamo");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](93, "ion-card")(94, "ion-card-header")(95, "ion-card-title");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](96, "Idiomas");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](97, "ion-card-content")(98, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](99, "Espa\u00F1ol (Nativo), Ingl\u00E9s (B1)");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](100, "ion-card")(101, "ion-card-header")(102, "ion-card-title");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](103, "Datos de contacto");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](104, "ion-card-content")(105, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](106, "767-106-54-22");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](107, "p");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](108, "roberts.pineda.rcp@gmail.com");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementStart"](109, "ion-button", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵlistener"]("click", function HomePage_Template_ion_button_click_109_listener() {
         return ctx.downloadPDF();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](104, "Exportar a PDF");
+      _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtext"](110, "Exportar a PDF");
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵelementEnd"]()();
     }
     if (rf & 2) {
@@ -272,4 +279,4 @@ _HomePage.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵd
 /***/ })
 
 }]);
-//# sourceMappingURL=5055.d4b53496a5d525cd.js.map
+//# sourceMappingURL=5055.fc981071a6f3c5f8.js.map
