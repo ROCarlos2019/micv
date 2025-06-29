@@ -25,36 +25,10 @@ export class HomePage {
   }
 
   downloadPDF() {
-    const cvContent = document.getElementById('cv-content');
-    if (!cvContent) return;
-
-    html2canvas(cvContent, { scrollY: -window.scrollY }).then((canvas) => {
-      const imgData = canvas.toDataURL('image/png');
-
-      const pdf = new jsPDF('p', 'mm', 'a4');
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = pdf.internal.pageSize.getHeight();
-
-      const imgProps = pdf.getImageProperties(imgData);
-      const imgWidth = pdfWidth;
-      const imgHeight = (imgProps.height * imgWidth) / imgProps.width;
-
-      let heightLeft = imgHeight;
-      let position = 0;
-
-      // Primera página
-      pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-      heightLeft -= pdfHeight;
-
-      // Páginas siguientes
-      while (heightLeft > 0) {
-        position = heightLeft - imgHeight;
-        pdf.addPage();
-        pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-        heightLeft -= pdfHeight;
-      }
-
-      pdf.save('CV_Roberto_Carlos_Pineda.pdf');
-    });
+    const link = document.createElement('a');
+    link.href = 'assets/RobertoCarlosPineda_CVMinsait2025.pdf';
+    link.download = 'RobertoCarlosPineda_CVMinsait2025.pdf';
+    link.target = '_blank';
+    link.click();
   }
 }
